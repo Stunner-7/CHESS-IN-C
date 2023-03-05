@@ -1309,11 +1309,11 @@ void handleTurn(GameState* gameState) {
 }
 
 int EndGame(GameState *gameState) {
-    if (gameState->blackillegal == 3) {
+    if (gameState->blackillegal == 4) {
         printf("\n \n \n GAME OVER!! Black Loses White Wins !! CONGRATULATIONS WHITE PLAYER");
         return 1;
     }
-    else if (gameState->whiteillegal == 3) {
+    else if (gameState->whiteillegal == 4) {
         printf("\n \n \n GAME OVER!! White Loses Black Wins !! CONGRATULATIONS BLACK PLAYER");
         return 1;
     }
